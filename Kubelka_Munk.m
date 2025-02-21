@@ -10,11 +10,16 @@ data_date = "24.12.10";
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Load data %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 function [bandgap_table] = load_data(data_date)
     bandgap_table = [];
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    %%%% material = Sb2S3  -> material_inx = 1 %%%%
-    %%%% material = Sb2Se3 -> material_inx = 3 %%%%
-    %%%% material = Bi2S3  -> material_inx = 4 %%%%
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%%% material = 100% SbS -> dataset = 1 %%%%
+    %%%% material = 90%  SbS -> dataset = 2 %%%%
+    %%%% material = 67%  SbS -> dataset = 3 %%%%
+    %%%% material = 50%  SbS -> dataset = 4 %%%%
+    %%%% material = 33%  SbS -> dataset = 5 %%%%
+    %%%% material = 10%  SbS -> dataset = 6 %%%%
+    %%%% material = 100% BiS -> dataset = 7 %%%%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
     % Specify the root folder
     alloy.rootFolder = "./"+data_date;
